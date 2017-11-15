@@ -1,0 +1,68 @@
+/**
+* @app:     EnDATA Scientific Calculator
+*
+* @file:    main.css
+*
+* @author:  Ilkin Elesgerov <ilkinelesger@gmail.com>
+*           Nima Bavari     <nima.bavari@gmail.com>
+*
+* @desc:    This is the main stylesheet of the scientific
+*           calculator.
+*           
+*           https://github.com/NimaBavari
+*           (c) EnDATA Ltd., 2017. All rights reserved.
+*
+*/
+
+h5 {
+    text-align: right;
+    color: #333333;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+input[type=text] {
+    text-align: right;
+    height: 50px;
+    width: 100%;
+    padding: 6px;
+    border: 10px groove #888888;
+    background-color: #E5DFA0;
+    font-family: Luicida, monospace;
+    margin: 0px;
+}
+
+input {
+    width: 48px;
+    height: 38px;
+    display: inline-block;
+    margin: 0px;
+}
+
+.scientific {
+    background-color: #444444;
+    color: #BBBBBB;
+    font-family: Verdana;
+    font-size: 8px;
+    font-weight: bold;
+    border: none;
+}
+
+.cardinal {
+    background-color: red;
+    color: white;
+}
+
+.simple{
+    background-color: #EEEEEE;
+    color: #222222;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+#calc-contain {
+    width: 360px;
+    margin: 0px auto;
+}

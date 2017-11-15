@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>EnDATA Scientific Calculator</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head><body>
+        <div id="calc-contain">
+            <img src="img/EnData.png" alt="EnData" width="360px" />
+            <h5>SCIENTIFIC CALCULATOR</h5>
+            <form id="calculator">
+                <input type="text" id="screen" value="0" readonly />
+                
+                <div class="line">
+                    <input class="scientific" type="button" value="RAD" onclick="setAngleMode('rad')" />
+                    <input class="scientific" type="button" value="DEG" onclick="setAngleMode('deg')" />
+                    <input class="scientific" type="button" value="x!" onclick="addFactorial()" />
+                    <input class="scientific" type="button" value="(" onclick="addSpecial('(')" />
+                    <input class="scientific" type="button" value=")" onclick="addSpecial(')')" />
+                    <input class="scientific cardinal" type="button" value="C" onclick="clearScreen()" />
+                    <input class="scientific cardinal" type="button" value="CE" onclick="clearLast()" />
+                </div><div class="line">
+                    <input class="scientific" type="button" value="1/x" onclick="inverseVal()" />
+                    <input class="scientific" type="button" value="sin" onclick="addSin()" />
+                    <input class="scientific" type="button" value="ln" onclick="addLn()" />
+                    <input class="simple" type="button" value="7" onclick="addSpecial('7')" />
+                    <input class="simple" type="button" value="8" onclick="addSpecial('8')" />
+                    <input class="simple" type="button" value="9" onclick="addSpecial('9')" />
+                    <input class="simple" type="button" value="&#247;" onclick="addSpecial('/')" />
+                </div><div class="line">
+                    <input class="scientific" type="button" value="&#960;" onclick="addSymbol('pi')" />
+                    <input class="scientific" type="button" value="cos" onclick="addCos()" />
+                    <input class="scientific" type="button" value="sqr" onclick="addSquare()" />
+                    <input class="simple" type="button" value="4" onclick="addSpecial('4')" />
+                    <input class="simple" type="button" value="5" onclick="addSpecial('5')" />
+                    <input class="simple" type="button" value="6" onclick="addSpecial('6')" />
+                    <input class="simple" type="button" value="&#215;" onclick="addSpecial('*')" />
+                </div><div class="line">
+                    <input class="scientific" type="button" value="e" onclick="addSymbol('e')" />
+                    <input class="scientific" type="button" value="tan" onclick="addTan()" />
+                    <input class="scientific" type="button" value="nthr" onclick="addRoot()" />
+                    <input class="simple" type="button" value="1" onclick="addSpecial('1')" />
+                    <input class="simple" type="button" value="2" onclick="addSpecial('2')" />
+                    <input class="simple" type="button" value="3" onclick="addSpecial('3')" />
+                    <input class="simple" type="button" value="-" onclick="addSpecial('-')" />
+                </div><div class="line">
+                    <input class="scientific" type="button" value="exp" onclick="addExp()" />
+                    <input class="scientific" type="button" value="sqrt" onclick="addSquareroot()" />
+                    <input class="scientific" type="button" value="nthp" onclick="addPower()" />
+                    <input class="simple" type="button" value="0" onclick="addSpecial('0')" />
+                    <input class="simple" type="button" value="." onclick="addSpecial('.')" />
+                    <input class="simple" type="button" value="=" onclick="addSpecial('=')" />
+                    <input class="simple" type="button" value="+" onclick="addSpecial('+')" />
+                </div>
+                
+            </form>
+        </div>
+        <script type="text/javascript" src="js/engine.js"></script>
+    </body>
+</html>
