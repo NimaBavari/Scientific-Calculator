@@ -4,20 +4,20 @@
 * @file:    main.css
 *
 * @author:  Ilkin Elesgerov <ilkinelesger@gmail.com>
+
 *           Nima Bavari     <nima.bavari@gmail.com>
+            https://github.com/NimaBavari
 *
 * @desc:    This is the main stylesheet of the scientific
 *           calculator.
 *           
-*           https://github.com/NimaBavari
 *           (c) EnDATA Ltd., 2017. All rights reserved.
-*
 */
 
 h5 {
     text-align: right;
     color: #333333;
-    font-family: Arial;
+    font-family: "Noto Sans", sans-serif;
     font-size: 16px;
     font-weight: bold;
     margin: 3px;

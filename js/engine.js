@@ -4,11 +4,11 @@
  * @file		engine.js
  * 
  * @author		Nima Bavari <nima.bavari@gmail.com>
+ * 				https://github.com/NimaBavari
  * 
  * @desc		This is the engine of the Scientific
  *				Calculator.
  *
- *				https://github.com/NimaBavari
  *				(c) EnDATA Ltd., 2017. All rights reserved.
  */
 
@@ -49,12 +49,16 @@ function ln(val) {
 }
 
 function getFactorial(num) {
-	if(num === 0)
-		return 1;
-	else if(num > 0)
-		return num * getFactorial(num - 1);
-	else
-		return 'ERROR: Illegal factorial';
+	if(Number.isInteger(num)) {
+		if(num === 0)
+			return 1;
+		else if(num > 0)
+			return num * getFactorial(num - 1);
+		else
+			return 'ERROR: Illegal factorial';
+	} else {
+		return 'ERROR: Non-integer factorial';
+	}
 }
 
 function checkElem() {
